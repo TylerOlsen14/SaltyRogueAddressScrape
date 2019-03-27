@@ -1,10 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
   <img alt="Salty Rogue Real Estate" src="../assets/logo.jpg" width="125px">
+  <h1>exams</h1>
 </div>
+<h2>Here are the exams created so far:</h2>
+<ul>
+  <li *ngfor="let exam of exams list">
+    {{exam.title}}
+  </li>
+</ul>
 
 
 <router-outlet></router-outlet>
